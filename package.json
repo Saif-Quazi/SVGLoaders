@@ -1,0 +1,17 @@
+{
+    "name": "svgloaders-api",
+    "version": "1.0.0",
+    "description": "Minimal SVG loader API with edge functions",
+    "type": "module",
+    "scripts": {
+        "dev": "netlify dev",
+        "build": "netlify build"
+    },
+    "keywords": [
+        "svg",
+        "loaders",
+        "api"
+    ],
+    "author": "",
+    "license": "MIT"
+}
