@@ -59,11 +59,11 @@ h1 {
     color: white;
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .subtitle {
-    color: rgba(255,255,255,0.9);
+    color: rgba(255, 255, 255, 0.9);
     font-size: 1.1rem;
 }
 
@@ -339,6 +339,7 @@ input[type="range"] {
     border-radius: 2px;
     background: var(--border-color);
     outline: none;
+    appearance: none;
     -webkit-appearance: none;
     transition: background 0.3s ease;
 }
@@ -434,42 +435,63 @@ input[type="color"]::-webkit-color-swatch {
 }
 
 @media (max-width: 768px) {
-    body { padding: 1rem; }
-    h1 { font-size: 2rem; }
-    .playground { max-width: 95vw; }
-    .controls-grid { 
+    body {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .playground {
+        max-width: 95vw;
+    }
+
+    .controls-grid {
         grid-template-columns: 1fr;
         gap: 1rem;
     }
-    .preview-section { padding: 4rem 5% 2rem; min-height: 350px; }
+
+    .preview-section {
+        padding: 4rem 5% 2rem;
+        min-height: 350px;
+    }
+
     .loader-image {
         width: 250px;
         height: 250px;
     }
-    .theme-toggle { 
-        width: 44px; 
+
+    .theme-toggle {
+        width: 44px;
         height: 44px;
         top: 1rem;
         right: 1rem;
     }
+
     .theme-icon {
         width: 20px;
         height: 20px;
     }
+
     .speed-selector-floating {
         top: 1rem;
     }
+
     .speed-pill {
         padding: 3px;
     }
+
     .speed-option {
         padding: 0.4rem 1rem;
         font-size: 0.8rem;
     }
-    .url-bar { 
+
+    .url-bar {
         max-width: 100%;
         flex-wrap: wrap;
     }
+
     .size-indicator {
         bottom: 1rem;
         right: 1rem;

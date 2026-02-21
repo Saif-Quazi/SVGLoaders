@@ -48,8 +48,9 @@ export const tokenize = (template, params) => {
 
 export const parseParams = (url, pathSize) => {
 	const parsed = {};
+	const sizeValue = pathSize !== undefined ? String(pathSize) : undefined;
 	for (const [param, config] of Object.entries(paramConfig)) {
-		const value = param === 'size' ? pathSize : url.searchParams.get(param);
+		const value = param === 'size' ? sizeValue : url.searchParams.get(param);
 		const validator = validators[config.type];
 		parsed[param] = validator ? validator(value, config) : config.default;
 	}
